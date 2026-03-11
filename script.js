@@ -30,7 +30,7 @@ function bolgeSec(bolge) {
     ilanlarDiv.innerHTML = `
       <div class="ilan">
         <h3>Beldibi Mahallesi – 3+1 Daire</h3>
-        <div class="galeri">
+        <div class="gallery">
           <img src="images/beldibi1.jpg" alt="Beldibi Daire Foto 1">
           <img src="images/beldibi2.jpg" alt="Beldibi Daire Foto 2">
           <img src="images/beldibi3.jpg" alt="Beldibi Daire Foto 3">
@@ -40,7 +40,21 @@ function bolgeSec(bolge) {
         <button onclick="openPopup()">İletişime Geç</button>
       </div>
     `;
+  } else if (bolge === "Merkez") {
+    ilanlarDiv.innerHTML = `
+      <div class="ilan">
+        <h3>Marmaris Merkez – 2+1 Daire</h3>
+        <div class="gallery">
+          <img src="images/marmaris1.jpg" alt="Marmaris Foto 1">
+          <img src="images/marmaris2.jpg" alt="Marmaris Foto 2">
+        </div>
+        <p>Fiyat: 25.000 TL / Aylık</p>
+        <p>Şehir merkezinde modern daireler.</p>
+        <button onclick="openPopup()">İletişime Geç</button>
+      </div>
+    `;
   }
+  // Diğer bölgeler için benzer bloklar ekleyebilirsin
 }
 
 // Popup aç/kapat
@@ -50,6 +64,7 @@ function openPopup() {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
+
 // Form gönderme
 function sendMessage(event) {
   event.preventDefault(); // Sayfa yenilenmesin
