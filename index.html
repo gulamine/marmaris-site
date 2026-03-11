@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Amine Emlak</title>
-  <!-- CSS dosyanın adı stil.css -->
-  <link rel="stylesheet" href="stil.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Ana Sayfa Slayt Banner -->
   <div class="banner">
     <div class="slider">
-      <img src="anahtar1.jpg" alt="Anahtar Görseli">
+      <img src="anahtar1.jpg" alt="Anahtar Görseli" class="active">
       <img src="marmaris1.jpg" alt="Marmaris Manzarası">
       <img src="marmaris2.jpg" alt="Marmaris Evleri">
       <img src="marmaris6.jpg" alt="Marmaris Evleri">
     </div>
+    
     <div class="banner-text">
       <h1>Amine Emlak</h1>
       <p>Marmaris’in en güzel kiralık ve satılık evleri burada!</p>
     </div>
     <!-- İleri–Geri Butonları -->
-    <button class="prev" onclick="prevSlide()">&#10094;</button>
-    <button class="next" onclick="nextSlide()">&#10095;</button>
+  <button class="prev" onclick="prevSlide()">&#10094;</button>
+  <button class="next" onclick="nextSlide()">&#10095;</button>
+
   </div>
 
   <!-- Bölge seçimi -->
@@ -46,7 +47,6 @@
   </div>
 
   <div id="ilanlar"></div>
-
   <!-- İletişim Popup -->
   <div id="popup" class="popup">
     <div class="popup-content">
@@ -56,14 +56,16 @@
       <p>E-posta: info@amineemlak.com</p>
       <p>Adres: Marmaris, Muğla</p>
       <!-- Form -->
-      <form id="contactForm" onsubmit="sendMessage(event)">
-        <input type="text" id="name" placeholder="Adınız" required>
-        <input type="text" id="phone" placeholder="Telefon" required>
-        <textarea id="message" placeholder="Mesajınız" required></textarea>
-        <button type="submit">Gönder</button>
-      </form>
-    </div>
+    <form id="contactForm" onsubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="Adınız" required>
+      <input type="text" id="phone" placeholder="Telefon" required>
+      <textarea id="message" placeholder="Mesajınız" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
   </div>
+</div>
+
+
 
   <script src="script.js"></script>
 </body>
