@@ -30,7 +30,7 @@ function bolgeSec(bolge) {
     ilanlarDiv.innerHTML = `
       <div class="ilan">
         <h3>Beldibi Mahallesi – 3+1 Daire</h3>
-        <div class="gallery">
+        <div class="galeri">
           <img src="images/beldibi1.jpg" alt="Beldibi Daire Foto 1">
           <img src="images/beldibi2.jpg" alt="Beldibi Daire Foto 2">
           <img src="images/beldibi3.jpg" alt="Beldibi Daire Foto 3">
@@ -44,7 +44,7 @@ function bolgeSec(bolge) {
     ilanlarDiv.innerHTML = `
       <div class="ilan">
         <h3>Marmaris Merkez – 2+1 Daire</h3>
-        <div class="gallery">
+        <div class="galeri">
           <img src="images/marmaris1.jpg" alt="Marmaris Foto 1">
           <img src="images/marmaris2.jpg" alt="Marmaris Foto 2">
         </div>

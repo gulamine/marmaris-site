@@ -1,11 +1,13 @@
+/* Genel ayarlar */
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
-/* Ana Sayfa Banner */
+/* Banner */
 .banner {
   position: relative;
   width: 100%;
@@ -34,6 +36,7 @@ body {
   opacity: 1;
 }
 
+/* Banner yazısı */
 .banner-text {
   position: absolute;
   top: 50%;
@@ -53,6 +56,27 @@ body {
   font-size: 24px;
   margin-top: 10px;
   color: #101112;
+}
+
+/* Slayt butonları */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Bölge seçimi */
@@ -100,7 +124,7 @@ select {
 }
 
 /* Galeri */
-.gallery {
+.galeri {
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -108,7 +132,7 @@ select {
   margin: 20px;
 }
 
-.gallery img {
+.galeri img {
   width: 220px;
   height: auto;
   border-radius: 8px;
@@ -116,28 +140,7 @@ select {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* Slayt Butonları */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  padding: 12px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 20px;
-}
-
-.prev { left: 20px; }
-.next { right: 20px; }
-
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Genel Buton */
+/* Genel buton */
 button {
   padding: 8px 15px;
   background-color: #2c3e50;
