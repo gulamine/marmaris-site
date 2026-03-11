@@ -9,17 +9,10 @@
   <!-- Ana Sayfa Slayt Banner -->
   <div class="banner">
     <div class="slider">
-      <img src="anahtar1.jpg" alt="Anahtar Görseli" class="active">
-      <img src="marmaris1.jpg" alt="Marmaris Manzarası">
-      <img src="marmaris2.jpg" alt="Marmaris Evleri">
-      <img src="marmaris6.jpg" alt="Marmaris Evleri">
-    
-  <img src="images/beldibi1.jpg" alt="Beldibi 1">
-  <img src="images/beldibi2.jpg" alt="Beldibi 2">
-  <img src="images/beldibi3.jpg" alt="Beldibi 3">
-</div>
-
-
+      <img src="images/anahtar.jpg" alt="Anahtar Görseli" class="active">
+      <img src="images/marmaris1.jpg" alt="Marmaris Manzarası">
+      <img src="images/marmaris2.jpg" alt="Marmaris Evleri">
+      <img src="images/marmaris6.jpg" alt="Marmaris Evleri">
     </div>
     
     <div class="banner-text">
@@ -27,9 +20,8 @@
       <p>Marmaris’in en güzel kiralık ve satılık evleri burada!</p>
     </div>
     <!-- İleri–Geri Butonları -->
-  <button class="prev" onclick="prevSlide()">&#10094;</button>
-  <button class="next" onclick="nextSlide()">&#10095;</button>
-
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
   </div>
 
   <!-- Bölge seçimi -->
@@ -53,15 +45,22 @@
     </select>
   </div>
 
+  <!-- İlanlar bölümü -->
+  <div id="ilanlar">
+    <!-- Varsayılan olarak Beldibi ilanı -->
+    <div class="ilan">
+      <h3>Beldibi Mahallesi – 3+1 Daire</h3>
+      <div class="galeri">
+        <img src="images/beldibi1.jpg" alt="Beldibi Daire Foto 1">
+        <img src="images/beldibi2.jpg" alt="Beldibi Daire Foto 2">
+        <img src="images/beldibi3.jpg" alt="Beldibi Daire Foto 3">
+      </div>
+      <p>Fiyat: 18.000 TL / Aylık</p>
+      <p>Doğa içinde, merkeze yakın, balkonlu.</p>
+      <button onclick="openPopup()">İletişime Geç</button>
+    </div>
+  </div>
 
-<div class="gallery">
-  <img src="images/beldibi1.jpg" alt="Beldibi 1">
-  <img src="images/beldibi2.jpg" alt="Beldibi 2">
-  <img src="images/beldibi3.jpg" alt="Beldibi 3">
-</div>
-
-
-  <div id="ilanlar"></div>
   <!-- İletişim Popup -->
   <div id="popup" class="popup">
     <div class="popup-content">
@@ -71,17 +70,19 @@
       <p>E-posta: info@amineemlak.com</p>
       <p>Adres: Marmaris, Muğla</p>
       <!-- Form -->
-    <form id="contactForm" onsubmit="sendMessage(event)">
-      <input type="text" id="name" placeholder="Adınız" required>
-      <input type="text" id="phone" placeholder="Telefon" required>
-      <textarea id="message" placeholder="Mesajınız" required></textarea>
-      <button type="submit">Gönder</button>
-    </form>
-  </div>
-</div>
+      <form id="contactForm" onsubmit="sendMessage(event)">
+        <input type="text" id="name" placeholder="Adınız" required>
+        <input type="text" id="phone" placeholder="Telefon" required>
+        <textarea id="message" placeholder="Mesajınız" required></textarea>
+        <button type="submit">Gönder</button>
+      </form>
+    </div>
+    </div>
 
+  <script src="scripts.js"></script>
+  <body>
+    <html>
 
-
-  <script src="script.js"></script>
-</body>
-</html>
+  
+  
+  
